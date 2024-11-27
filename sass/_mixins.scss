@@ -4,3 +4,11 @@
     flex-wrap: $wrap;
     gap: $gap;
 }
+
+@mixin box($width, $height, $pad, $bradius){
+    width: 100%;
+    max-width: $width;
+    height: $height;
+    padding: $pad;
+    border-radius: $bradius;
+}
