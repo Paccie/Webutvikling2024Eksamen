@@ -1,24 +1,31 @@
 @use "fonts.scss" as *;
 @use "colors.scss" as *;
+@use "mixins.scss" as *;
+
+h1{
+    margin: none;
+}
 
 header{
-    background-color: $lightGrey;
-
-    ul{
-        list-style: none;
-    }
+    
+    background-color: $brandColor;
 
     nav{
-        display: flex;
-        flex-wrap: nowrap;
+        @include flexbox(column, nowrap, 1rem);
+        justify-content: space-between;
+        align-items: center;
+        ul{
+            list-style: none;
+            padding: 0;
+        }
     }
 
     a{
         color: $black;
+        text-decoration: none;
     }
 }
 
 #main-menu{
-    display: flex;
-    flex-wrap: nowrap;
+    @include flexbox(auto, nowrap, 1rem);
 }

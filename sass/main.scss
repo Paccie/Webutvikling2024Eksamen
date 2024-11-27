@@ -10,5 +10,17 @@
 body{
     display: grid;
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
+}
+
+img{
+    max-width: 100vw;
+}
+
+
+
+
+#frontpage-banner{
+    background-color: $lightGrey;
 }
