@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="resources/icons/css/fontawesome.css">
     <link rel="stylesheet" href="resources/icons/css/brands.css">
     <link rel="stylesheet" href="resources/icons/css/solid.css">
@@ -14,23 +14,20 @@
     <header>
         <nav>
             <form>
-                <label>
-                    <input type="search" placeholder="Søk her">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
+                <input type="search" placeholder="Søk her">
+                <button type="submit" title="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             
-            <ul>
+            <ul id="main-menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="index.html#popular-products">Produkter</a></li>
                 <li id="logo"><h1><a href="index.html">Logo</a></h1></li>
                 <li><a href="index.html#popular-categories">Kategorier</a></li>
                 <li><a href="#contact">Kontakt oss</a></li>
-                <li>
-                    <ul id="icon-menu">
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    </ul>
-                </li>
+            </ul>
+
+            <ul id="icon-menu">
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -95,7 +92,7 @@
         <section id="popular-categories">
             <h2>Våre mest populære kategorier</h2>
             <p>Finn det du trenger mest</p>
-            
+
             <article>
                 <h3>Frukt</h3>
                 <img src="resources/fruit-category.jpg" alt="Frukt kategorien">

@@ -1,0 +1,14 @@
+@use "fonts.scss" as *;
+@use "colors.scss" as *;
+@use "header.scss";
+
+*{
+    font-family: $mainFont;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+}

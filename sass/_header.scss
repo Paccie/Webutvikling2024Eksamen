@@ -1,0 +1,24 @@
+@use "fonts.scss" as *;
+@use "colors.scss" as *;
+
+header{
+    background-color: $lightGrey;
+
+    ul{
+        list-style: none;
+    }
+
+    nav{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    a{
+        color: $black;
+    }
+}
+
+#main-menu{
+    display: flex;
+    flex-wrap: nowrap;
+}
