@@ -52,7 +52,7 @@ p, h3, h4, a {
 }
 
 h2 {
-  padding: 0.25 rem;
+  padding: 0.25rem;
   font-size: 200%;
 }
 
@@ -120,4 +120,24 @@ h2 {
 #popular-products article p {
   margin: 0;
   margin-bottom: 1rem;
+}
+
+#popular-categories article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: auto;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-color: rgb(0, 0, 0);
+}
+#popular-categories article img {
+  width: calc(100vw - 1rem);
+}
+#popular-categories article h3 {
+  position: absolute;
+  font-size: 500%;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
