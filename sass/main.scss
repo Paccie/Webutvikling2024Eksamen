@@ -19,20 +19,24 @@ img{
     max-width: 100vw;
 }
 
-p, h2, h3, h4, a{
+p, h3, h4, a{
     padding: 0.25rem;
     font-size: 125%;
+}
+
+h2{
+    padding: 0.25 rem;
+    font-size: 200%;
 }
 
 
 #frontpage-banner{
     @include flexbox(column, auto, auto);
     align-items: end;
-    background-color: $lightGrey;
+    background-color: $grey;
     
-    h3{
+    h2{
         margin: 0;
-        font-size: 200%;
     }
 
     p{
@@ -40,16 +44,46 @@ p, h2, h3, h4, a{
     }
 
     a{
+        @include button($black, $white, $white);
         max-width: fit-content;
         font-size: 300%;
-        color: $black;
-        background-color: $white;
-        margin: 1rem;
-        display: inline-block;
-        text-decoration: none;
-        border-style: solid;
-        border-width: 5px;
-        border-color: $white;
-        border-radius: 25px;
     }
+}
+
+#popular-products{
+
+    ul{
+        @include flexbox(row, nowrap, 1rem);
+        justify-content: space-around;
+        padding: 0;
+        list-style: none;
+
+        li{
+            a{
+                @include button($black, none, $black);
+            }
+        }
+    }
+
+    article{
+        background-color: $lightGrey;
+
+        h4{
+            margin: 0;
+            font-size: 150%;
+            
+            a{
+                color: $black;
+                padding: 0;
+                text-decoration: none;
+            }
+        }
+    
+        p{
+            margin: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+
 }
