@@ -4,6 +4,7 @@
 @use "header.scss";
 @use "footer.scss";
 @use "product.scss";
+@use "checkout.scss";
 
 *{
     font-family: $mainFont;
@@ -12,7 +13,7 @@
 
 body{
     display: grid;
-    max-width: 1200px;
+    //max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }

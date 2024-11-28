@@ -113,6 +113,72 @@ footer a {
   text-decoration: none;
 }
 
+#shopping-cart article {
+  width: 100%;
+}
+#shopping-cart a {
+  padding: 0;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+#shopping-cart h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#shopping-cart p {
+  margin: 0;
+}
+
+#delivery-info input {
+  width: 100%;
+}
+
+#delivery-choice label {
+  font-size: 150%;
+  padding: 0.25rem;
+  display: inline-block;
+  width: 100%;
+}
+
+#payment-info form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+#payment-info form input {
+  width: 100%;
+}
+#payment-info form h4, #payment-info form h5 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+#payment-info form #price {
+  padding: 0.25rem;
+  font-size: 200%;
+  font-weight: 700;
+}
+#payment-info form #buy-button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(172, 154, 202);
+  margin: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(172, 154, 202);
+  border-radius: 25px;
+  font-size: 200%;
+  text-align: center;
+}
+#payment-info form .checkbox {
+  text-align: center;
+}
+#payment-info form .checkbox input {
+  width: auto;
+}
+
 * {
   font-family: "Nunito", sans-serif;
   box-sizing: border-box;
@@ -120,7 +186,6 @@ footer a {
 
 body {
   display: grid;
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }

@@ -36,15 +36,15 @@
         <section id="shopping-cart">
             <h2>Handlekurven din</h2>
             <article>
-                <h3>Produktnavn</h3>
                 <img src="resources/article-image.jpg" alt="Blå dress med rød slips">
+                <h4><a href="product.html">Produktnavn</a></h4>
                 <p>4999,- kr</p>
                 <p>Farge: Blå</p>
             </article>
 
             <article>
-                <h3>Produktnavn</h3>
                 <img src="resources/article-image.jpg" alt="Blå dress med rød slips">
+                <h4><a href="product.html">Produktnavn</a></h4>
                 <p>4999,- kr</p>
                 <p>Farge: Blå</p>
             </article>
@@ -112,19 +112,19 @@
                 </label>
 
                 <h4>Å betale (inkl. mva)</h4>
-                <h2>4999,- kr</h2>
+                <h5 id="price">4999,- kr</h5>
 
-                <a href="#" class="btn">Fullfør kjøp</a>
+                <a href="#" id="buy-button">Fullfør kjøp</a>
                 <p>Du bekrefter herved at opplysningene og dokumentene du har
                     oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg
                     retten til å heve eller avslutte avtaleforholdet dersom det foreligger
                     uriktige eller ufullstendige opplysninger.</p>
 
-                <label>
+                <label class="checkbox">
                     Ja, jeg godtar vilkårene
-                    <input type="checkbox" name="termsacceptance" required>
+                    <input type="checkbox" name="terms-acceptance" required>
                 </label>
-                <label>
+                <label class="checkbox">
                     Ja takk, send nyhetsbrev til meg
                     <input type="checkbox" name="newslist">
                 </label>
