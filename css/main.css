@@ -67,6 +67,26 @@ header a {
   margin: 0;
 }
 
+#skip-to-main {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  margin: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  display: block;
+  position: absolute;
+  left: -9999px;
+  font-size: 300%;
+}
+
+#skip-to-main:focus {
+  left: 0px;
+}
+
 footer {
   background-color: rgb(190, 190, 190);
 }
@@ -160,7 +180,7 @@ footer a {
   font-weight: 700;
 }
 #payment-info form #buy-button {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   background-color: rgb(172, 154, 202);
   margin: 1rem;
   display: inline-block;

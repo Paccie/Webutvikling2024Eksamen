@@ -60,7 +60,7 @@
         }
 
         #buy-button{
-            @include box($white, $brandColor, $brandColor);
+            @include box($black, $brandColor, $brandColor);
             font-size: 200%;
             text-align: center;
         }
