@@ -78,6 +78,41 @@ footer a {
   text-decoration: none;
 }
 
+#breadcrumbs ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+#breadcrumbs li {
+  font-size: 100%;
+  font-weight: 700;
+}
+#breadcrumbs a, #breadcrumbs i {
+  color: rgb(0, 0, 0);
+  font-size: 100%;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+#product-main a {
+  color: rgb(220, 220, 220);
+}
+
+#product-relevant h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+#product-relevant p {
+  margin: 0;
+}
+#product-relevant a {
+  color: rgb(0, 0, 0);
+  padding: 0;
+  text-decoration: none;
+}
+
 * {
   font-family: "Nunito", sans-serif;
   box-sizing: border-box;

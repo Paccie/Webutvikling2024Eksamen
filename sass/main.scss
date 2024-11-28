@@ -3,6 +3,7 @@
 @use "mixins.scss" as *;
 @use "header.scss";
 @use "footer.scss";
+@use "product.scss";
 
 *{
     font-family: $mainFont;

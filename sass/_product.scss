@@ -1,0 +1,47 @@
+@use "fonts.scss" as *;
+@use "colors.scss" as *;
+@use "mixins.scss" as *;
+
+#breadcrumbs{
+    
+    ul{
+        @include flexbox(row, nowrap, 0.5rem);
+        list-style: none;
+    }
+
+    li{
+        font-size: 100%;
+        font-weight: 700;
+    }
+
+    a, i{
+        color: $black;
+        font-size: 100%;
+        font-weight: 400;
+        text-decoration: none;
+    }
+}
+
+#product-main{
+    a{
+        color: $lightGrey;
+    }
+}
+
+#product-relevant{
+
+    h4{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    a{
+        color: $black;
+        padding: 0;
+        text-decoration: none;
+    }
+}
