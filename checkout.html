@@ -7,30 +7,27 @@
     <link rel="stylesheet" href="resources/icons/css/fontawesome.css">
     <link rel="stylesheet" href="resources/icons/css/brands.css">
     <link rel="stylesheet" href="resources/icons/css/solid.css">
-    <title>Eksamen | Kasse</title>
+    <title>Eksamen | Forside</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <form>
-                <label>
-                    <input type="search" placeholder="Søk her">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
+            <form id="search-bar">
+                <input type="search" placeholder="Søk her">
+                <button type="submit" title="Søk"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
             
-            <ul>
+            <ul id="main-menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="index.html#popular-products">Produkter</a></li>
                 <li id="logo"><h1><a href="index.html">Logo</a></h1></li>
                 <li><a href="index.html#popular-categories">Kategorier</a></li>
                 <li><a href="#contact">Kontakt oss</a></li>
-                <li>
-                    <ul id="icon-menu">
-                        <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    </ul>
-                </li>
+            </ul>
+
+            <ul id="icon-menu">
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -39,14 +36,14 @@
         <section id="shopping-cart">
             <h2>Handlekurven din</h2>
             <article>
-                <h2>Produktnavn</h2>
+                <h3>Produktnavn</h3>
                 <img src="resources/article-image.jpg" alt="Blå dress med rød slips">
                 <p>4999,- kr</p>
                 <p>Farge: Blå</p>
             </article>
 
             <article>
-                <h2>Produktnavn</h2>
+                <h3>Produktnavn</h3>
                 <img src="resources/article-image.jpg" alt="Blå dress med rød slips">
                 <p>4999,- kr</p>
                 <p>Farge: Blå</p>
@@ -146,6 +143,7 @@
             <li>E-post: halden@hiof.no</li>
         </ul>
 
+        <h3 id="shortcuts">Snarveier</h3>
         <nav>
             <ul>
                 <li><a href="index.html#popular-products">Produkter</a></li>

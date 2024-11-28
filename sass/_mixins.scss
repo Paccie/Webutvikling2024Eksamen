@@ -5,17 +5,9 @@
     gap: $gap;
 }
 
-@mixin box($width, $height, $pad, $bradius){
-    width: 100%;
-    max-width: $width;
-    height: $height;
-    padding: $pad;
-    border-radius: $bradius;
-}
-
-@mixin button($textColor, $buttonColor, $borderColor){
+@mixin box($textColor, $bgColor, $borderColor){
     color: $textColor;
-    background-color: $buttonColor;
+    background-color: $bgColor;
     margin: 1rem;
     display: inline-block;
     text-decoration: none;

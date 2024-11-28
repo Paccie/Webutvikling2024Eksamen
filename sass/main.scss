@@ -2,6 +2,7 @@
 @use "colors.scss" as *;
 @use "mixins.scss" as *;
 @use "header.scss";
+@use "footer.scss";
 
 *{
     font-family: $mainFont;
@@ -29,10 +30,9 @@ h2{
     font-size: 200%;
 }
 
-
 #frontpage-banner{
     @include flexbox(column, auto, auto);
-    align-items: end;
+    align-items: flex-end;
     background-color: $grey;
     
     h2{
@@ -44,7 +44,7 @@ h2{
     }
 
     a{
-        @include button($black, $white, $white);
+        @include box($black, $white, $white);
         max-width: fit-content;
         font-size: 300%;
     }
@@ -60,7 +60,7 @@ h2{
 
         li{
             a{
-                @include button($black, none, $black);
+                @include box($black, none, $black);
             }
         }
     }
@@ -87,6 +87,7 @@ h2{
 }
 
 #popular-categories{
+    
     article{
         @include flexbox(column, wrap, auto);
         justify-content: center;
@@ -94,6 +95,7 @@ h2{
         border-style: solid;
         border-width: 0.5rem;
         border-color: $black;
+        margin-top: 0.5rem;
 
         img{
             width: calc(100vw - 1rem)
@@ -104,5 +106,25 @@ h2{
             font-size: 500%;
             margin: 0;
         }
+    }
+}
+
+#reviews{
+
+    article{
+        @include flexbox(column, wrap, auto);
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-width: 0.25rem;
+        border-color: $black;
+        margin-top: 0.25rem;
+    }
+    
+    img{
+        
+        object-fit: cover;
+        width: 150px;
+        height: 150px;
     }
 }

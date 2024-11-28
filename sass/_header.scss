@@ -26,6 +26,29 @@ header{
     }
 }
 
+#search-bar{
+    @include box($black, $white, $white);
+    padding: 1rem;
+    border-radius: 100px;
+
+    input{
+        height: 2.5rem;
+    }
+
+    button{
+        @include box($white, $black, $black);
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 150%;
+        border-radius: 100%;
+    }
+}
+
 #main-menu{
     @include flexbox(auto, nowrap, 1rem);
+}
+
+#icon-menu{
+    font-size: 200%;
+    margin: 0;
 }
